@@ -1,7 +1,6 @@
-# devops-netology
-one line
+hello, gitignore!
 
-###############################################
+######################################
 
 # Ignore Logs
 logs
@@ -12,11 +11,10 @@ logs
 
 # The file containing environment variables 
 .env
-.txt
 
 # Ignore IDE specific files
 .idea/
 .vscode/
-*.sw*
-
-###############################################
+*.sw* 
+ 
+####################################
