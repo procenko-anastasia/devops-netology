@@ -1,22 +1,24 @@
 # devops-netology
-one line
 
-###############################################
 
-# Ignore Logs
-logs
-*.log
+**/.terraform/* - игнорировать все файлы с окончанием ".terraform" (совпадения в предыдущих каталогах и всё, что находится внутри каталога)
 
-# Ignore the build directory
-/dist
+\# .tfstate files - строка будет проигнорирована, тк закомментированна
 
-# The file containing environment variables 
-.env
-.txt
+*.tfstate - не обрабатывать файлы, которые заканчиваются ".tfstate"
+*.tfstate.* - игнорировать файлы, которые имеют в своем названии ".tfstate."
 
-# Ignore IDE specific files
-.idea/
-.vscode/
-*.sw*
+crash.log - игнорировать лог ошибки
 
-###############################################
+*.tfvars - не обрабатывать файлы, которые заканчиваются ".tfvars"
+
+override.tf - файл переопределения, проигнорирован
+override.tf.json - файл переопределения, проигнорирован
+*_override.tf - не обрабатывать файлы, которые заканчиваются "_override.tf"
+*_override.tf.json - не обрабатывать файлы, которые заканчиваются "_override.tf.json"
+
+
+/# example: *tfplan* - строка будет проигнорирована, тк закомментированна 
+
+.terraformrc - проигнорировать файл, заканчивающийся на ".terraformrc"
+terraform.rc - игнорирование конфигурационного файла
