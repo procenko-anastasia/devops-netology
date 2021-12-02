@@ -78,7 +78,7 @@ Network:
 ```
 
    Метрики:
- ![img](Images/metriki.png)
+ ![img](metriki.png)
   
 4. Судя по выводу dmesg - да: 
 ```
@@ -111,7 +111,7 @@ root@vagrant:/etc/netdata# ulimit -Sn
 root@vagrant:/etc/netdata# ulimit -Hn
 1048576
 ```
-6.  ![img](Images/sleep.png)
+6.  ![img](sleep.jpg)
 7. `:(){ :|:& };:` - определяет функцию с именем : , которая порождает саму себя (дважды, один канал переходит в другой) и создает фон.
 
 ```
