@@ -554,7 +554,7 @@ server {
         #root /usr/share/nginx/html;
 
         #location / {
-        #    root /var/www/kursavay/html;
+        #    root /var/www/kursovay/html;
             #try_files $uri $uri/ =404;
         #}
 }
