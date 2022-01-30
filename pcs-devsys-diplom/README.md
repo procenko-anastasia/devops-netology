@@ -405,7 +405,7 @@ systemctl status nginx
   
 ### Создаём веб-страничку
   
-+ Создаём папку под наш мега-сайт:  
++ Создаём папку под наш сайт:  
 ```bash
 mkdir -p /kursovay/
 ```
@@ -590,10 +590,12 @@ systemctl reload nginx
   
 + Заходим с хост машины на наш сайт:  
 Видим  это:  
-![img](img/5.jpg)
-В свойствах сертификата тоже явного криминала не видно:  
-![img](img/cert_net.jpg)
-![img](img/cert_net2.jpg)
+![img](img/5.PNG)
+
+Cвойства сертификата:  
+
+![img](img/cert_net.PNG)
+![img](img/cert_net2.PNG)
   
 Задача 9
 --------
@@ -623,14 +625,14 @@ echo "Create new certificate..."
 echo "Vault sealing..."
 ./vault_seal.sh
 
-#Копируем свежий приватный ключ в /etc/certs/kursach
+#Копируем свежий приватный ключ в /usr/certs/
 echo "Private key copy..."
-cp ./certs/end_private_key.pem /etc/certs/kursach/privkey.pem
+cp ./certs/end_private_key.pem /usr/certs/privkey.pem
 
-#Создаём fullchain из нового сертификата и intermediate-сертификата в /etc/certs/kursach
+#Создаём fullchain из нового сертификата и intermediate-сертификата в /usr/certs/
 echo "Fullchain copy..."
-cat ./certs/end_cert.crt > /etc/certs/kursach/fullchain.pem
-cat ./certs/end_ca_chain >> /etc/certs/kursach/fullchain.pem
+cat ./certs/end_cert.crt > /usr/certs/fullchain.pem
+cat ./certs/end_ca_chain >> /usr/certs/fullchain.pem
 
 #Перезагружаем конфиг nginx`а
 echo "Nginx reloading"
