@@ -6,7 +6,7 @@
 
 ## Задача 1
   
-![Мой репозиторий на hub.docker.com](https://hub.docker.com/repository/docker/procenkoanastasia/netology-devops)
+Мой репозиторий на hub.docker.com ```https://hub.docker.com/repository/docker/procenkoanastasia/netology-devops```
 
 Загружаем образ nginx, заходим в контейнер
 ```bash
