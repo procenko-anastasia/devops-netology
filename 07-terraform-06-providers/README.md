@@ -24,22 +24,20 @@
 
 
 2. Для создания очереди сообщений SQS используется ресурс `aws_sqs_queue` у которого есть параметр `name`. 
-    * С каким другим параметром конфликтует `name`? Приложите строчку кода, в которой это указано.
-- 
+  * С каким другим параметром конфликтует `name`? Приложите строчку кода, в которой это указано. 
 ```go
 ConflictsWith: []string{"name_prefix"}
 ```
 https://github.com/hashicorp/terraform-provider-aws/blob/main/internal/service/sqs/queue.go#L87
 
-    * Какая максимальная длина имени? 
-- 
+   * Какая максимальная длина имени? 
+
 ```go
 	errors = append(errors, fmt.Errorf("%q cannot be longer than 80 characters", k))
 ```
 https://github.com/hashicorp/terraform-provider-aws/blob/main/internal/service/sfn/validate.go#L11
 
-    * Какому регулярному выражению должно подчиняться имя? 
--
+   * Какому регулярному выражению должно подчиняться имя? 
 ```go
 	if !regexp.MustCompile(`^[a-zA-Z0-9-_]+$`).MatchString(value) {
 		errors = append(errors, fmt.Errorf(
