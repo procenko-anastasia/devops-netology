@@ -157,10 +157,8 @@ centos7                    : ok=3    changed=0    unreachable=0    failed=0    s
 ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
 
-**
 - `CentOS7` -  `some_fact` = `el`
-- `Ubuntu` - ``some_fact` = `deb`
-**
+- `Ubuntu` - `some_fact` = `deb`
 
 ----
 5. *Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились следующие значения: для `deb` - 'deb default fact', для `el` - 'el default fact'.*  
