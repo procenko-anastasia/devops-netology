@@ -119,7 +119,7 @@ Anastasia@MacBook-Air playbook % docker run -d --name ubuntu 42a4e3b21923 /bin/s
 
 Anastasia@MacBook-Air ~ % docker ps -a                                                       
 CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS                   PORTS     NAMES
-2ad6876f22d5   42a4e3b21923   "/bin/sleep 10000000…"   13 seconds ago   Up 12 seconds             ubuntu
+2ad6876f22d5   42a4e3b21923     "/bin/sleep 10000000…"   13 seconds ago  Up 12 seconds                      ubuntu
 4ef41e17475d   eeb6ee3f44bd     "/bin/sleep 10000000…"   4 minutes ago   Up 4 minutes                       centos7
 a7273c4b64ed   adminer          "entrypoint.sh docke…"   2 months ago    Exited (0) 2 hours ago             netology-adminer-1
 6dc3a7ba6f2c   mysql:8-oracle   "docker-entrypoint.s…"   2 months ago    Exited (0) 2 hours ago             netology-db-1
