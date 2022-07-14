@@ -4,7 +4,7 @@
 
 ***Подготовка инфраструктуры.***
 
-```yml
+```
 docker-compose.yml
 
 	version: "3"
