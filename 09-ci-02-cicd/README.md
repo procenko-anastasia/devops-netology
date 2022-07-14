@@ -32,7 +32,7 @@
 ```
 Результат:
 
-![sq](img/1.jpg)
+![sq](img/1.png)
 
 ## Знакомство с Nexus
 ```
@@ -45,24 +45,24 @@
 	Anastasia@MacBook-Air ~ % docker run -d -p 8081:8081 --name nexus sonatype/nexus3
 	Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
 	006bc2cc760cdd89d0d3e8102d9258ad9a05b6f61dc30868a223fe15e5fdd5c8
-
+```
 ![nexus](img/2.png)
-
+```
 	docker exec -it nexus /bin/bashsh
 	Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
 	bash-4.4$ cat nexus-data/admin.password 
 	2a6b3053-0252-4081-b85b-68378b5b8441
-
+```
 ![nexus](img/3.png)
-
+```
 	$ touch 09-ci-02-cicd/dummy.tar.gz
-
+```
 ![nexus](img/4.png)
 
 ![nexus](img/5.png)
 
 ## Знакомство с  Maven
-```
+
 	Anastasia@MacBook-Air ~ % mvn --version
 	Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
 	Maven home: /home/v/bin/apache-maven
