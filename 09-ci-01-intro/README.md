@@ -16,7 +16,7 @@
 7. *Done <-> Closed, Open*
 
 **Выполнено:**  
-![Workflow_bug](./img/1.png)
+![Workflow_bug](./img/bugs.png)
 
 *Остальные задачи должны проходить по упрощённому workflow:*
 1. *Open -> On develop*
@@ -26,4 +26,4 @@
 5. *Done <-> Closed, Open*
 
 **Выполнено:**  
-![Workflow](./img/2.png)
+![Workflow](./img/all.png)
