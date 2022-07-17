@@ -379,7 +379,6 @@ variable "web_instance_map" {
  description = "Instance Type"
 }
 ```
-Проинициализируем `Map'y`
 `terraform.tfvars`
 ```bash
   web_instance_map = {
